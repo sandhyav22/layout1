@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="image/logo.jpeg" alt="EarthBubs" />
+        <span>EarthBubs</span>
+      </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul class="nav-links">
+        <li class="active"><a href="index.html">Home</a></li>
+       <li class="dropdown">
+    <a href="#">Products </a>
+    <ul class="dropdown-menu">
+      <li><a href="pampers.html">Pampers</a></li>
+      <li><a href="boysfashion.html">Boy's Fashions</a></li>
+      <li><a href="girlsfashion.html">Girl's Fashions</a></li>
+      <li><a href="soap.html">Soap</a></li>
+       <li><a href="stroller.html">Stroller</a></li>
+        <li><a href="bottle.html">Bottle</a></li>
+    </ul>
+  </li>
+        <li> <a href="offers.html">Offers</a></li>
+        <li><a href="about.html">About</a></li>
+        <li> <a href="contact.html">Contacts</a></li>
+      </ul>
+      <div class="icons">
+        <input type="text" placeholder="Search..." id="searchBar" />
+        <i class="search-icon">🔍</i>
+        
+          <a href="cart.html" id="cart-link">Cart
+      <span class="cart-count-badge" id="nav-cart-count">0</span>
+
+        <i class="cart-icon">🛒</i>
+        </a>
+        <i class="login-icon">👤</i>
+      </div>
+    </nav>
+  </header>
+   
+<div class="cart-container">
+    <h4>Home &gt; Add to Cart</h4>
+    <p class="cart-count">Cart Items: <span id="cart-count">0</span></p>
+
+    <!-- Cart Header Titles -->
+    <div class="cart-header">
+      <div>Product</div>
+      <div>Price</div>
+      <div>Quantity</div>
+      <div>Subtotal</div>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="cart-item" data-price="800">
+      <div class="product-info2">
+        <img src="image/Frame 1171275018.png" alt="Milk Baby Soap">
+        Milk Baby Soap
+      </div>
+      <div>₹800</div>
+      <div><input type="number" value="1" class="qty-input" min="1" /></div>
+      <div class="subtotal">₹800</div>
+     
+    </div>
+
+    <div class="cart-item" data-price="700">
+      <div class="product-info2">
+        <img src="image/Frame 1171275001.png" alt="Mee Mee Pampers">
+        Mee Mee Pampers
+      </div>
+      <div>₹700</div>
+      <div><input type="number" value="2" class="qty-input" min="1" /></div>
+      <div class="subtotal">₹1400</div>
+    
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="totals">
+        <h4>Cart Total</h4>
+      <p><span>Subtotal:</span> ₹<span id="subtotal">2200</span></p><hr>
+      <p><span>Discount:</span> ₹<span id="discount">250</span></p><hr>
+      <p><span>Shipping:</span> Free</p>
+      <hr>
+      <p><strong><span>Total:</span> ₹<span id="total">1950</span></strong></p>
+      <button class="checkout-btn1" onclick="window.location.href='payment.html'">Proceed to Checkout</button>
+    </div>
+  </div>
+<div style="margin: 200px;margin-top: -230px; max-width: 150px;">
+  <label for="coupon" style="font-weight: bold; display: block;width: 100%; margin-bottom: 6px; color:black;"></label>
+  <input type="text" id="coupon" placeholder="🏷Coupon Code" style="width: 100%;background-color: #a6e0e9; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" />
+  <button onclick="applyCoupon()" style="margin-top: -250px;margin-left: 330px; background-color: #00c2e0;font-size: 16px; color: rgb(12, 12, 12); border: none;width: 100%; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+    Apply Coupon
+  </button>
+  <p id="coupon-message" style="color: green; font-weight: bold; margin-top: 10px;"></p>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h4>KNOW</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">About Earthbubs Store</a></li>
+        <li><a href="#">Bulk Purchase & Corporate Gifts</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>TERMS & CONDITIONS</h4>
+      <ul>
+        <li><a href="#">Shipping & Return Policies</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">FAQ’s</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>CONTACT US</h4>
+      <p>For Sale: Earthbubs@co.in</p>
+      <p>Call: +91 1234567890</p>
+      <p>For Complaints: 1800 202 2222</p>
+      <p>Chat Time: Our Team is Available<br>From Monday to Saturday from<br>9.00AM to 8.00PM</p>
+      <p>For Complaints: Ebcustomercare.com</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>FOLLOW US</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <hr class="footer-divider" />
+  <p class="copyright">Copyright © 2025 All Rights Reserved.</p>
+</footer>
+ <script src="script.js"></script>
+</body>
+</html>

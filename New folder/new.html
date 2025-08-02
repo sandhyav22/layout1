@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .info-container{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.info-card {
+  width:  210px;
+  border: 2px solid #00c2e0;
+  border-radius: 16px;
+  padding: 20px 10px;
+  text-align: center;
+  font-family: 'Poppins';
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.icon img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  background-color: #b3ecf9;
+  border-radius: 10px;
+  padding: 16px;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-text h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-text p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .info-card {
+    width: 45%; /* 2 in a row */
+  }
+
+  .card-text h3 {
+    font-size: 15px;
+  }
+
+  .card-text p {
+    font-size: 13px;
+  }
+
+  .icon img {
+    width: 45px;
+  }
+}
+
+/* Mobile View: 1 card per row */
+@media (max-width: 480px) {
+  section {
+    padding: 32px 4%;
+  }
+
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+  }
+
+  .info-card {
+    width: 100%;
+    padding: 16px 12px;
+  }
+
+  section h1 {
+    font-size: 1.75rem;
+  }
+
+  section h4 {
+    font-size: 1.1rem;
+  }
+
+  .icon img {
+    width: 40px;
+    margin-bottom: 16px;
+  }
+
+  .card-text {
+    padding: 14px;
+  }
+
+  .card-text h3 {
+    font-size: 14px;
+  }
+
+  .card-text p {
+    font-size: 12.5px;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="info-container">
+<div class="info-card">
+  <div class="icon">
+    <img src="image/c1.png" alt="Approved Icon" />
+  </div>
+  <div class="card-text">
+    <h3>Dermatologist Approved</h3>
+    <p>Every product is tested and safe for even the most sensitive baby skin.</p>
+  </div>
+  </div>
+  <div class="info-card">
+  <div class="icon">
+    <img src="image/c2.png" alt="Approved Icon" />
+  </div>
+  <div class="card-text">
+    <h3>Natural & Non-Toxic Ingredients</h3>
+    <p>We use only gentle plant based formulas free from harsh chemicals.</p>
+  </div>
+  </div>
+  <div class="info-card">
+  <div class="icon">
+    <img src="image/c3.png" alt="Approved Icon" />
+  </div>
+  <div class="card-text">
+    <h3>Loved by Thousands of Parents</h3>
+    <p>Real reviews, real results trusted by families across the country.</p>
+  </div>
+  </div>
+   <div class="info-card">
+  <div class="icon">
+    <img src="image/c4.png" alt="Approved Icon" />
+  </div>
+  <div class="card-text">
+   <h3>Eco-Friendly Promise</h3>
+   <p>From biodegradable packaging to cruelty-free manufacturing, we care for the planet as much as your baby.</p>
+  </div>
+  </div>
+  
+  <div class="info-card">
+  <div class="icon">
+    <img src="image/c5.png" alt="Approved Icon" />
+  </div>
+  <div class="card-text">
+    <h3>Fast & Reliable Shipping</h3>
+    <p>We deliver your baby's essential swiftly and safely because every moment counts.</p>
+  </div>
+  </div>
+</div>
+</section>
+</body>
+</html>
